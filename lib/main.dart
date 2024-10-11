@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:salem_portfolio/theme.dart';
 import 'package:salem_portfolio/ui/main_screen.dart';
 
@@ -16,11 +17,20 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      themeMode: ThemeMode.dark,
-      darkTheme: AppTheme().getTheme(),
-      home: const MainScreen(),
-      debugShowCheckedModeBanner: false,
+    return ScreenUtilInit(
+      designSize: const Size(1600, 3630),
+      builder: (context, child) {
+        return MaterialApp(
+          themeMode: ThemeMode.dark,
+          darkTheme: AppTheme().getTheme(),
+          home: child,
+          builder: (context, child) {
+            return MediaQuery(data: MediaQuery.of(context), child: child!);
+          },
+          debugShowCheckedModeBanner: false,
+        );
+      },
+      child: const MainScreen(),
     );
   }
 }

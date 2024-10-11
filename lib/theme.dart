@@ -8,7 +8,9 @@ class AppTheme {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: const Color(0xff191919),
         cardColor: const Color(0xff363636),
-        appBarTheme:  AppBarTheme(color: const Color(0xff191919) , titleTextStyle: TextStyle(color: AppColors.titleDarkColor)),
+        appBarTheme: AppBarTheme(
+            color: const Color(0xff191919),
+            titleTextStyle: TextStyle(color: AppColors.titleDarkColor)),
         textTheme: TextTheme(
           bodyLarge: TextStyle(
             color: AppColors.titleDarkColor,
@@ -54,4 +56,11 @@ class AppColors {
   static Color get titleDarkColor => const Color(0xffCCCCCC);
 
   static Color get bodyDarkColor => const Color(0xffEBEBEB);
+
+  static LinearGradient get duoGradient => const LinearGradient(
+        colors: [
+          Color(0xff13B0F5),
+          Color(0xffE70FAA),
+        ],
+      );
 }
