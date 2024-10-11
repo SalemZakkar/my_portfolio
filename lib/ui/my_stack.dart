@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:salem_portfolio/gen/assets.gen.dart';
-import 'package:salem_portfolio/main.dart';
 
 class MyStack extends StatefulWidget {
   const MyStack({super.key});

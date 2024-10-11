@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:salem_portfolio/main.dart';
 
 class ProjectCard extends StatefulWidget {
   const ProjectCard({super.key});
