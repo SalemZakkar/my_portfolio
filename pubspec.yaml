@@ -21,11 +21,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
 flutter:
   uses-material-design: true
   assets:
     - assets/fonts/poppins/
     - assets/icons/
+    - assets/projects/
 
   fonts:
     - family: poppins
@@ -39,11 +41,19 @@ flutter:
 flutter_gen:
   output: lib/gen/ # Optional (default: lib/gen/)
   line_length: 80 # Optional (default: 80)
-
-  # Optional
   integrations:
     flutter_svg: true
     flare_flutter: false
     rive: false
     lottie: false
 
+flutter_launcher_icons:
+  web:
+    generate: true
+    image_path: "assets/icons/fav.png"
+    background_color: "#C10055"
+    theme_color: "#C10055"
+  windows:
+    generate: true
+    image_path: "assets/icons/fav.png"
+    icon_size: 48 # min:48, max:256, default: 48

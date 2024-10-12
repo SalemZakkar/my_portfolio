@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salem_portfolio/ui/contact_me.dart';
+import 'package:salem_portfolio/ui/experience_page.dart';
 import 'package:salem_portfolio/ui/home_screen.dart';
 import 'package:salem_portfolio/ui/my_projects_page.dart';
 import 'package:salem_portfolio/ui/my_stack.dart';
@@ -19,6 +20,9 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        scrolledUnderElevation: 0,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+
         centerTitle: true,
         title: NavBar(
             index: page,
@@ -41,6 +45,7 @@ class _MainScreenState extends State<MainScreen> {
           });
         },
         children: const [HomeScreen(), MyStack() , MyProjectsPage() , ContactMe()],
+        // children: const [ExperiencePage()],
       ),
     );
   }

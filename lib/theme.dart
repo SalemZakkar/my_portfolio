@@ -4,13 +4,13 @@ class AppTheme {
   ThemeData getTheme() => ThemeData(
         fontFamily: 'poppins',
         useMaterial3: true,
-        primaryColor: const Color(0xFF47A8EC),
-        primarySwatch: Colors.blue,
+        primaryColor: const Color(0xFFC10055),
+        primarySwatch: Colors.pink,
         scaffoldBackgroundColor: const Color(0xff191919),
         cardColor: const Color(0xff363636),
         appBarTheme: AppBarTheme(
             color: const Color(0xff191919),
-            titleTextStyle: TextStyle(color: AppColors.titleDarkColor)),
+            titleTextStyle: TextStyle(color: AppColors.titleDarkColor , fontFamily: 'poppins')),
         textTheme: TextTheme(
           bodyLarge: TextStyle(
             color: AppColors.titleDarkColor,

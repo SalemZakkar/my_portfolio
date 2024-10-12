@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:salem_portfolio/data/projects.dart';
 import 'package:salem_portfolio/ui/project_card.dart';
 
 class MyProjectsPage extends StatefulWidget {
@@ -38,21 +39,25 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
             height: 150.h,
           ),
           SizedBox(
-            width: min(MediaQuery.of(context).size.width, 5 * 220 + 5 * 16),
-            height: 330,
+            width: MediaQuery.of(context).size.width,
+            height: 300,
             child: ListView.builder(
               // separatorBuilder: (context , index) => 8.horizontalSpace,
               itemBuilder: (context, index) {
-                return const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8),
+                return Padding(
+                  padding: EdgeInsets.only(
+                      left: index == 0 ? 36 : 36,
+                      right: index == myProjects.length - 1 ? 36 : 0),
                   child: SizedBox(
-                    width: 220,
-                    height: 330,
-                    child: ProjectCard(),
+                    width: 400,
+                    height: 300,
+                    child: ProjectCard(
+                      project: myProjects[index],
+                    ),
                   ),
                 );
               },
-              itemCount: 5,
+              itemCount: myProjects.length,
               scrollDirection: Axis.horizontal,
             ),
           ),

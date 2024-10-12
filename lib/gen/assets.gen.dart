@@ -38,6 +38,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/email.svg
   SvgGenImage get email => const SvgGenImage('assets/icons/email.svg');
 
+  /// File path: assets/icons/fav.svg
+  SvgGenImage get fav => const SvgGenImage('assets/icons/fav.svg');
+
   /// File path: assets/icons/firebase.svg
   SvgGenImage get firebase => const SvgGenImage('assets/icons/firebase.svg');
 
@@ -89,6 +92,7 @@ class $AssetsIconsGen {
         atlassian,
         dart,
         email,
+        fav,
         firebase,
         flutter,
         git,
@@ -103,6 +107,55 @@ class $AssetsIconsGen {
         phoneSvg,
         vscode,
         whatsapp
+      ];
+}
+
+class $AssetsProjectsGen {
+  const $AssetsProjectsGen();
+
+  /// File path: assets/projects/alef.png
+  AssetGenImage get alef => const AssetGenImage('assets/projects/alef.png');
+
+  /// File path: assets/projects/aws_bazar.png
+  AssetGenImage get awsBazar =>
+      const AssetGenImage('assets/projects/aws_bazar.png');
+
+  /// File path: assets/projects/logo.png
+  AssetGenImage get logo => const AssetGenImage('assets/projects/logo.png');
+
+  /// File path: assets/projects/ozoon.png
+  AssetGenImage get ozoon => const AssetGenImage('assets/projects/ozoon.png');
+
+  /// File path: assets/projects/pagination.png
+  AssetGenImage get pagination =>
+      const AssetGenImage('assets/projects/pagination.png');
+
+  /// File path: assets/projects/range.png
+  AssetGenImage get range => const AssetGenImage('assets/projects/range.png');
+
+  /// File path: assets/projects/shams_captain.png
+  AssetGenImage get shamsCaptain =>
+      const AssetGenImage('assets/projects/shams_captain.png');
+
+  /// File path: assets/projects/shams_customer.png
+  AssetGenImage get shamsCustomer =>
+      const AssetGenImage('assets/projects/shams_customer.png');
+
+  /// File path: assets/projects/sorting.png
+  AssetGenImage get sorting =>
+      const AssetGenImage('assets/projects/sorting.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+        alef,
+        awsBazar,
+        logo,
+        ozoon,
+        pagination,
+        range,
+        shamsCaptain,
+        shamsCustomer,
+        sorting
       ];
 }
 
@@ -197,6 +250,7 @@ class Assets {
 
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
+  static const $AssetsProjectsGen projects = $AssetsProjectsGen();
 }
 
 class AssetGenImage {
