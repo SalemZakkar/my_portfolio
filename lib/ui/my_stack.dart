@@ -54,9 +54,20 @@ class _MyStackState extends State<MyStack> {
                   Assets.icons.git.svg(width: 52, height: 52),
                   Assets.icons.github.svg(width: 52, height: 52),
                   Assets.icons.atlassian.svg(width: 52, height: 52),
-                  Assets.icons.nodeJs.svg(width: 52, height: 52),
                   Assets.icons.firebase.svg(width: 52, height: 52),
-                  Assets.icons.java.svg(width: 52, height: 52),
+                  Badge(
+                      backgroundColor: Colors.orange,
+                      label: const Text('Learning'),
+                      // alignment: Alignment(-1 , -1),
+                      // alignment: Alignment(0.1, 1),
+                      child: Assets.icons.kotlin.svg(width: 52, height: 52)),
+                  Badge(
+                      backgroundColor: Colors.orange,
+                      label: const Text('Learning'),
+                      // alignment: Alignment(-1 , -1),
+                      // alignment: Alignment(0.1, -1),
+
+                      child: Assets.icons.android.svg(width: 52, height: 52)),
                 ],
               ),
             ),

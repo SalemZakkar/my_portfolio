@@ -22,6 +22,9 @@ class $AssetsFontsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/android.svg
+  SvgGenImage get android => const SvgGenImage('assets/icons/android.svg');
+
   /// File path: assets/icons/androidstudio.svg
   SvgGenImage get androidstudio =>
       const SvgGenImage('assets/icons/androidstudio.svg');
@@ -38,8 +41,11 @@ class $AssetsIconsGen {
   /// File path: assets/icons/email.svg
   SvgGenImage get email => const SvgGenImage('assets/icons/email.svg');
 
+  /// File path: assets/icons/fav.png
+  AssetGenImage get favPng => const AssetGenImage('assets/icons/fav.png');
+
   /// File path: assets/icons/fav.svg
-  SvgGenImage get fav => const SvgGenImage('assets/icons/fav.svg');
+  SvgGenImage get favSvg => const SvgGenImage('assets/icons/fav.svg');
 
   /// File path: assets/icons/firebase.svg
   SvgGenImage get firebase => const SvgGenImage('assets/icons/firebase.svg');
@@ -64,6 +70,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/java.svg
   SvgGenImage get java => const SvgGenImage('assets/icons/java.svg');
 
+  /// File path: assets/icons/kotlin.svg
+  SvgGenImage get kotlin => const SvgGenImage('assets/icons/kotlin.svg');
+
   /// File path: assets/icons/link.svg
   SvgGenImage get link => const SvgGenImage('assets/icons/link.svg');
 
@@ -87,12 +96,14 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<dynamic> get values => [
+        android,
         androidstudio,
         appStore,
         atlassian,
         dart,
         email,
-        fav,
+        favPng,
+        favSvg,
         firebase,
         flutter,
         git,
@@ -100,6 +111,7 @@ class $AssetsIconsGen {
         googlePlay,
         intellijIdea,
         java,
+        kotlin,
         link,
         linkedIn,
         nodeJs,
@@ -119,6 +131,10 @@ class $AssetsProjectsGen {
   /// File path: assets/projects/aws_bazar.png
   AssetGenImage get awsBazar =>
       const AssetGenImage('assets/projects/aws_bazar.png');
+
+  /// File path: assets/projects/chilliwack.png
+  AssetGenImage get chilliwack =>
+      const AssetGenImage('assets/projects/chilliwack.png');
 
   /// File path: assets/projects/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/projects/logo.png');
@@ -149,6 +165,7 @@ class $AssetsProjectsGen {
   List<AssetGenImage> get values => [
         alef,
         awsBazar,
+        chilliwack,
         logo,
         ozoon,
         pagination,
@@ -162,87 +179,14 @@ class $AssetsProjectsGen {
 class $AssetsFontsPoppinsGen {
   const $AssetsFontsPoppinsGen();
 
-  /// File path: assets/fonts/poppins/Poppins-Black.ttf
-  String get poppinsBlack => 'assets/fonts/poppins/Poppins-Black.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-BlackItalic.ttf
-  String get poppinsBlackItalic =>
-      'assets/fonts/poppins/Poppins-BlackItalic.ttf';
-
   /// File path: assets/fonts/poppins/Poppins-Bold.ttf
   String get poppinsBold => 'assets/fonts/poppins/Poppins-Bold.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-BoldItalic.ttf
-  String get poppinsBoldItalic => 'assets/fonts/poppins/Poppins-BoldItalic.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-ExtraBold.ttf
-  String get poppinsExtraBold => 'assets/fonts/poppins/Poppins-ExtraBold.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf
-  String get poppinsExtraBoldItalic =>
-      'assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-ExtraLight.ttf
-  String get poppinsExtraLight => 'assets/fonts/poppins/Poppins-ExtraLight.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-ExtraLightItalic.ttf
-  String get poppinsExtraLightItalic =>
-      'assets/fonts/poppins/Poppins-ExtraLightItalic.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-Italic.ttf
-  String get poppinsItalic => 'assets/fonts/poppins/Poppins-Italic.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-Light.ttf
-  String get poppinsLight => 'assets/fonts/poppins/Poppins-Light.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-LightItalic.ttf
-  String get poppinsLightItalic =>
-      'assets/fonts/poppins/Poppins-LightItalic.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-Medium.ttf
-  String get poppinsMedium => 'assets/fonts/poppins/Poppins-Medium.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-MediumItalic.ttf
-  String get poppinsMediumItalic =>
-      'assets/fonts/poppins/Poppins-MediumItalic.ttf';
 
   /// File path: assets/fonts/poppins/Poppins-Regular.ttf
   String get poppinsRegular => 'assets/fonts/poppins/Poppins-Regular.ttf';
 
-  /// File path: assets/fonts/poppins/Poppins-SemiBold.ttf
-  String get poppinsSemiBold => 'assets/fonts/poppins/Poppins-SemiBold.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-SemiBoldItalic.ttf
-  String get poppinsSemiBoldItalic =>
-      'assets/fonts/poppins/Poppins-SemiBoldItalic.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-Thin.ttf
-  String get poppinsThin => 'assets/fonts/poppins/Poppins-Thin.ttf';
-
-  /// File path: assets/fonts/poppins/Poppins-ThinItalic.ttf
-  String get poppinsThinItalic => 'assets/fonts/poppins/Poppins-ThinItalic.ttf';
-
   /// List of all assets
-  List<String> get values => [
-        poppinsBlack,
-        poppinsBlackItalic,
-        poppinsBold,
-        poppinsBoldItalic,
-        poppinsExtraBold,
-        poppinsExtraBoldItalic,
-        poppinsExtraLight,
-        poppinsExtraLightItalic,
-        poppinsItalic,
-        poppinsLight,
-        poppinsLightItalic,
-        poppinsMedium,
-        poppinsMediumItalic,
-        poppinsRegular,
-        poppinsSemiBold,
-        poppinsSemiBoldItalic,
-        poppinsThin,
-        poppinsThinItalic
-      ];
+  List<String> get values => [poppinsBold, poppinsRegular];
 }
 
 class Assets {
@@ -283,7 +227,7 @@ class AssetGenImage {
     ImageRepeat repeat = ImageRepeat.noRepeat,
     Rect? centerSlice,
     bool matchTextDirection = false,
-    bool gaplessPlayback = false,
+    bool gaplessPlayback = true,
     bool isAntiAlias = false,
     String? package,
     FilterQuality filterQuality = FilterQuality.low,

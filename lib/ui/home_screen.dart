@@ -37,9 +37,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               Text(
-                'Highly motivated Flutter Developer with a strong passion for creating engaging and high-performance mobile applications. Proficient in Dart and experienced in implementing complex UI designs and responsive layouts. Well-versed in state management techniques and integrating RESTful APIs to enhance app functionality. Committed to delivering exceptional user experiences through attention to detail and adherence to best practices in coding. Enjoy collaborating in agile environments, embracing feedback, and continuously seeking opportunities for professional growth. Eager to contribute innovative solutions and enhance team dynamics in a forward-thinking organization.',
+                "Highly skilled Mobile App Developer specializing in building cross-platform applications using Flutter. Proficient in developing custom plugins and integrating native functionality using Kotlin. Adept at designing user-friendly mobile experiences and optimizing app performance. Passionate about staying up-to-date with the latest mobile development trends and delivering high-quality, scalable solutions. Strong problem-solving skills and a proven ability to work collaboratively in fast-paced development environments.",
                 style: TextStyle(
-                  fontSize: or == Orientation.landscape ? 16.sp : 14,
+                  fontSize: or == Orientation.landscape ? 18.sp : 16,
                 ),
               ),
             ],

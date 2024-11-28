@@ -21,6 +21,16 @@ class Project {
 
 List<Project> myProjects = [
   Project(
+      name: "Chilliwack pharmacy",
+      desc:
+      'As part of maintaining a healthy life, Chilliwack Pharmacy is proud to introduce an Smartphone Application. The application allows you to manage your prescription profile and order your prescriptions quickly and easily using Mobile phones. Have your prescription profile at your finger tips any time you need it. At the emergency room, walk-in clinic, doctors office, everywhere!',
+      stack: ['Flutter', 'Kotlin', 'Alarm manager', 'Firebase messaging'],
+      appStore:
+      'https://apps.apple.com/ca/app/chilliwack-pharmacy/id1582705690',
+      googlePlay:
+      'https://play.google.com/store/apps/details?id=com.chilliwackpharmacy.app',
+      photos: [Assets.projects.chilliwack.image()]),
+  Project(
       name: "SHAMS",
       desc:
           'The application aims to bring together the various means of transportation available in one place, including means of transportation for university and school students, in addition to taxi services and other services related to transportation, to serve as a comprehensive platform that provides users with multiple options for moving from one place to another.',

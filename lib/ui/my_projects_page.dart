@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -42,6 +41,8 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
             width: MediaQuery.of(context).size.width,
             height: 300,
             child: ListView.builder(
+
+              // physics: const PageScrollPhysics(),
               // separatorBuilder: (context , index) => 8.horizontalSpace,
               itemBuilder: (context, index) {
                 return Padding(
@@ -49,7 +50,7 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
                       left: index == 0 ? 36 : 36,
                       right: index == myProjects.length - 1 ? 36 : 0),
                   child: SizedBox(
-                    width: 400,
+                    width: 550,
                     height: 300,
                     child: ProjectCard(
                       project: myProjects[index],
