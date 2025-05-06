@@ -60,14 +60,14 @@ class _MyStackState extends State<MyStack> {
                       label: const Text('Learning'),
                       // alignment: Alignment(-1 , -1),
                       // alignment: Alignment(0.1, 1),
-                      child: Assets.icons.kotlin.svg(width: 52, height: 52)),
+                      child: Assets.icons.ts.svg(width: 52, height: 52)),
                   Badge(
                       backgroundColor: Colors.orange,
                       label: const Text('Learning'),
                       // alignment: Alignment(-1 , -1),
                       // alignment: Alignment(0.1, -1),
 
-                      child: Assets.icons.android.svg(width: 52, height: 52)),
+                      child: Assets.icons.nodeJs.svg(width: 52, height: 52)),
                 ],
               ),
             ),
