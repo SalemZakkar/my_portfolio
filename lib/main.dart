@@ -21,6 +21,7 @@ class _AppState extends State<App> {
       designSize: const Size(1600, 3630),
       builder: (context, child) {
         return MaterialApp(
+          onGenerateTitle: (context) => 'Salem Zakkar',
           themeMode: ThemeMode.dark,
           darkTheme: AppTheme().getTheme(),
           home: child,
