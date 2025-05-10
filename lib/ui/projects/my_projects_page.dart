@@ -20,6 +20,7 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 50,),
             Text(
               'Projects',
               style: Theme.of(context).textTheme.headlineLarge,
