@@ -76,23 +76,24 @@ class _ProjectCardState extends State<ProjectCard> {
                               ],
                             ),
                           ),
-                          Row(
-                            children: [
-                              const Text("Stack: "),
-                              for (int i = 0;
-                                  i < widget.project.stack!.length;
-                                  i++)
-                                Flexible(
-                                  child: Text(
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: [
+                                const Text("Stack: "),
+                                for (int i = 0;
+                                    i < widget.project.stack!.length;
+                                    i++)
+                                  Text(
                                     widget.project.stack![i] +
                                         (i < widget.project.stack!.length - 1
                                             ? ', '
                                             : ''),
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                  ),
-                                )
-                            ],
+                                  )
+                              ],
+                            ),
                           ),
                           Row(
                             children: [
