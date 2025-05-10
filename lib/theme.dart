@@ -7,7 +7,8 @@ class AppTheme {
         primaryColor: const Color(0xFFC10055),
         primarySwatch: Colors.pink,
         scaffoldBackgroundColor: const Color(0xff191919),
-        cardColor: const Color(0xff363636),
+        cardColor: const Color(0xff232323),
+        iconTheme: IconThemeData(color: AppColors.titleDarkColor),
         appBarTheme: AppBarTheme(
             color: const Color(0xff191919),
             titleTextStyle: TextStyle(color: AppColors.titleDarkColor , fontFamily: 'poppins')),

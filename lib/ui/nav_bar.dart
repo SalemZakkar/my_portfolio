@@ -36,40 +36,44 @@ class _NavBarState extends State<NavBar> {
 
   List<String> titles = [
     "Home",
-    "TechStack",
+    'Experience',
     "Projects",
+    "TechStack",
     "Contact me",
   ];
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        for (int i = 0; i < titles.length; i++)
-          ...[
-            GestureDetector(
-              onTap: () {
-                setState(() {
-                  this.i = i;
-                });
-                widget.onNav.call(i);
-              },
-              child: Center(
-                child: Text(
-                  titles[i],
-                  style: TextStyle(
-                      decoration: this.i == i ? TextDecoration.underline : null,
-                      color:
-                      this.i == i ? Theme.of(context).primaryColor : null),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          for (int i = 0; i < titles.length; i++)
+            ...[
+              GestureDetector(
+                onTap: () {
+                  setState(() {
+                    this.i = i;
+                  });
+                  widget.onNav.call(i);
+                },
+                child: Center(
+                  child: Text(
+                    titles[i],
+                    style: TextStyle(
+                        decoration: this.i == i ? TextDecoration.underline : null,
+                        color:
+                        this.i == i ? Theme.of(context).primaryColor : null),
+                  ),
                 ),
               ),
-            ),
-             SizedBox(width: i == titles.length - 1 ? 0 : 67.w,),
-            // Container(width: 1 , height: 32, color: Theme.of(context).dividerColor,),
-            // const SizedBox(width: 2,),
-          ],
-      ],
+               SizedBox(width: i == titles.length - 1 ? 0 : 67.w,),
+              // Container(width: 1 , height: 32, color: Theme.of(context).dividerColor,),
+              // const SizedBox(width: 2,),
+            ],
+        ],
+      ),
     );
   }
 }

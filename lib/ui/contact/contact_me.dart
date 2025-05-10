@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../gen/assets.gen.dart';
+import '../../gen/assets.gen.dart';
 
 class ContactMe extends StatefulWidget {
   const ContactMe({super.key});

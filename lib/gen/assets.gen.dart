@@ -79,6 +79,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/linkedIn.svg
   SvgGenImage get linkedIn => const SvgGenImage('assets/icons/linkedIn.svg');
 
+  /// File path: assets/icons/mongo.svg
+  SvgGenImage get mongo => const SvgGenImage('assets/icons/mongo.svg');
+
   /// File path: assets/icons/node-js.svg
   SvgGenImage get nodeJs => const SvgGenImage('assets/icons/node-js.svg');
 
@@ -117,6 +120,7 @@ class $AssetsIconsGen {
     kotlin,
     link,
     linkedIn,
+    mongo,
     nodeJs,
     phonePng,
     phoneSvg,
@@ -131,6 +135,10 @@ class $AssetsProjectsGen {
 
   /// File path: assets/projects/alef.png
   AssetGenImage get alef => const AssetGenImage('assets/projects/alef.png');
+
+  /// File path: assets/projects/alfuttaim.png
+  AssetGenImage get alfuttaim =>
+      const AssetGenImage('assets/projects/alfuttaim.png');
 
   /// File path: assets/projects/aws_bazar.png
   AssetGenImage get awsBazar =>
@@ -168,6 +176,7 @@ class $AssetsProjectsGen {
   /// List of all assets
   List<AssetGenImage> get values => [
     alef,
+    alfuttaim,
     awsBazar,
     chilliwack,
     logo,

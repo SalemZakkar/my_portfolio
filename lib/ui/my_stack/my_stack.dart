@@ -16,31 +16,32 @@ class _MyStackState extends State<MyStack> {
   Widget build(BuildContext context) {
     return Container(
       constraints: const BoxConstraints.expand(),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text(
-            'My Stack',
-            style: Theme.of(context).textTheme.headlineLarge,
-          ),
-          SizedBox(
-            height: 49.h,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
-            child: Text(
-              'Technologies I’ve been working with recently',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.titleMedium,
+      alignment: Alignment.center,
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'My Stack',
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
-          ),
-          SizedBox(
-            height: 240.h,
-          ),
-          SizedBox(
-            width: min(MediaQuery.of(context).size.width * 0.9, 650),
-            child: SingleChildScrollView(
+            SizedBox(
+              height: 49.h,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Text(
+                'Technologies I’ve been working with recently',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+            ),
+            SizedBox(
+              height: 240.h,
+            ),
+            SizedBox(
+              width: min(MediaQuery.of(context).size.width * 0.9, 650),
               child: Wrap(
                 runSpacing: 56,
                 spacing: 56,
@@ -57,22 +58,33 @@ class _MyStackState extends State<MyStack> {
                   Assets.icons.firebase.svg(width: 52, height: 52),
                   Badge(
                       backgroundColor: Colors.orange,
-                      label: const Text('Learning'),
+                      label: const Text('Fresher'),
                       // alignment: Alignment(-1 , -1),
                       // alignment: Alignment(0.1, 1),
                       child: Assets.icons.ts.svg(width: 52, height: 52)),
                   Badge(
                       backgroundColor: Colors.orange,
-                      label: const Text('Learning'),
+                      label: const Text('Fresher'),
                       // alignment: Alignment(-1 , -1),
                       // alignment: Alignment(0.1, -1),
 
                       child: Assets.icons.nodeJs.svg(width: 52, height: 52)),
+                  Badge(
+                      backgroundColor: Colors.orange,
+                      label: const Text('Fresher'),
+                      // alignment: Alignment(-1 , -1),
+                      // alignment: Alignment(0.1, -1),
+
+                      child: Assets.icons.mongo.svg(width: 52, height: 52)),
                 ],
               ),
+
             ),
-          )
-        ],
+            const SizedBox(
+              height: 32,
+            ),
+          ],
+        ),
       ),
     );
   }

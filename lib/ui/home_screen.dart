@@ -16,35 +16,41 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       constraints: const BoxConstraints.expand(),
       padding: EdgeInsets.symmetric(horizontal: 180.w),
+      alignment: Alignment.center,
       child: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        child: OrientationBuilder(builder: (context, or) {
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              const Text(
-                "Hello , I am ",
+        child: Center(
+          child: OrientationBuilder(builder: (context, or) {
+            return SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  const Text(
+                    "Hello , I am ",
+                  ),
+                  GradientText(
+                    "Salem Zakkar",
+                    gradient: AppColors.duoGradient,
+                    style: TextStyle(
+                      fontSize: or == Orientation.landscape ? 64.sp : 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "Highly skilled Mobile App Developer specializing in building cross-platform applications using Flutter. Proficient in developing custom plugins and integrating native functionality using Kotlin. Adept at designing user-friendly mobile experiences and optimizing app performance. Passionate about staying up-to-date with the latest mobile development trends and delivering high-quality, scalable solutions. Strong problem-solving skills and a proven ability to work collaboratively in fast-paced development environments.",
+                    style: TextStyle(
+                      fontSize: or == Orientation.landscape ? 18.sp : 16,
+                    ),
+                  ),
+                  const SizedBox(height: 16,)
+                ],
               ),
-              GradientText(
-                "Salem Zakkar",
-                gradient: AppColors.duoGradient,
-                style: TextStyle(
-                  fontSize: or == Orientation.landscape ? 64.sp : 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                "Highly skilled Mobile App Developer specializing in building cross-platform applications using Flutter. Proficient in developing custom plugins and integrating native functionality using Kotlin. Adept at designing user-friendly mobile experiences and optimizing app performance. Passionate about staying up-to-date with the latest mobile development trends and delivering high-quality, scalable solutions. Strong problem-solving skills and a proven ability to work collaboratively in fast-paced development environments.",
-                style: TextStyle(
-                  fontSize: or == Orientation.landscape ? 18.sp : 16,
-                ),
-              ),
-            ],
-          );
-        }),
+            );
+          }),
+        ),
       ),
     );
   }
